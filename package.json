@@ -1,0 +1,25 @@
+{
+  "name": "11-burger",
+  "version": "1.0.0",
+  "description": "Burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsbrook/11-Burger.git"
+  },
+  "keywords": [
+    "Burger",
+    "Node",
+    "Express",
+    "Handlebars"
+  ],
+  "author": "Ivan J. Zapata-Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsbrook/11-Burger/issues"
+  },
+  "homepage": "https://github.com/johnsbrook/11-Burger#readme"
+}
