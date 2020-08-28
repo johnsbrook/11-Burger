@@ -1,2 +1,2 @@
-CREATE DATABASE chirpy;
-USE chirpy;
+CREATE DATABASE burger_db;
+USE burger_db;
