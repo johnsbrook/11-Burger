@@ -12,8 +12,8 @@ var exphbs = require('express-handlebars');
     app.set('view engine', 'handlebars');
 
 // Importing routes and giving server access to the routes
-// var routes = require('./controllers/burgerController.js');
-//     app.use(routes);
+var routes = require('./controllers/burgers_controller.js');
+    app.use(routes);
 
 // Starting server listen
     app.listen(PORT, function(){
