@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/johnsbrook/11-Burger/issues"
   },
-  "homepage": "https://github.com/johnsbrook/11-Burger#readme"
+  "homepage": "https://github.com/johnsbrook/11-Burger#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "init": "^0.1.2",
+    "mysql": "^2.18.1"
+  }
 }

@@ -1,25 +1,4 @@
-// Import MSQL connection
-var connection = require('../config/connection.js');
-
-function printQuestionMarks(num) {
-    var arr = [];
-
-    for (var i = 0; i < num; i++) {
-        arr.push("?");
-    }
-    return arr.toString();
-}
-
-function objToSql(ob) {
-    var arr = [];
-
-    for (var key in ob) {
-        
-        var value = ob[key];
-        if (Object.hasOwnProperty.call(ob,key)) {
-            if (typeof value === "string" && value.indexOf(" ") >= 0) {
-                value = "'" + value + "'";
-            }// Import MySQL connection.
+// Import MySQL connection.
 var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
@@ -102,27 +81,22 @@ var orm = {
       cb(result);
     });
   },
-  // delete: function(table, condition, cb) {
-  //   var queryString = "DELETE FROM " + table;
-  //   queryString += " WHERE ";
-  //   queryString += condition;
+  delete: function(table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
 
-  //   connection.query(queryString, function(err, result) {
-  //     if (err) {
-  //       throw err;
-  //     }
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
 
-  //     cb(result);
-  //   });
-  // }
+      cb(result);
+    });
+  }
 };
 
 // Export the orm object for the model (cat.js).
 module.exports = orm;
 
-            arr.push(key + "=" + value);
-        }
-    }
-    return arr.toString();
-}
-
+    
