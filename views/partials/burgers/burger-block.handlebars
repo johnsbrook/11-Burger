@@ -1,9 +1,9 @@
-<li>
+<li class="mb-3">
 	{{name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevoured="{{devour}}">
+	<br><button class="change-devour my-2 p-2 px-3 text-white" data-id="{{id}}" data-newdevoured="{{devour}}" style="background-color:blue; border: 0; border-radius: 5px; font-family: 'Comfortaa', cursive;">
 		{{#if devour}}Ready!{{else}}Wrong Order?{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">Burger Delivered</button>
+	<button class="delete-burger my-2 p-2 px-3 text-white" data-id="{{this.id}}" style="border: 0; border-radius: 5px; background-color: green; font-family: 'Comfortaa', cursive;">Burger Delivered</button>
 </li>
