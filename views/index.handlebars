@@ -13,7 +13,7 @@
         {{/each}}
       </ul>
 
-      <h3 class="text-center" style="font-family: 'Lobster', cursive;">Burgers ready to serve!</h3>
+      <h3 class="text-center mb-3" style="font-family: 'Lobster', cursive; font-size: 2em;">Burgers ready<font style="font-family: 'Comfortaa', cursive; font-size:.635em;"> to be served to customer!</font></h3>
 
       <ul style="list-style: none; font-family: 'Comfortaa', cursive;">
         {{#each burgers}}
@@ -23,21 +23,21 @@
         {{/each}}
       </ul>
 
-      <h3 class="text-center" style="font-family: 'Lobster', cursive;">Add a Burger</h3>
+      <h3 class="text-center" style="font-family: 'Comfortaa', cursive; font-size:1.25em;">Would you like to <font style="font-family: 'Lobster', cursive; font-size: 1.5em;">Add Burger</font> to kitchen?</h3>
       <form class="create-form">
 
         <div class="form-group">
-          <label for="ca" style="font-family: 'Comfortaa', cursive;">Burger Name:</label>
-          <input type="text" id="ca" name="name">
+          {{!-- <label for="ca" style="font-family: 'Comfortaa', cursive;" class="mt-2">Burger Name</label><br> --}}
+          <input placeholder="Enter burger name..." type="text" id="ca" name="name" style="border-radius: 25px; width: 50%; text-align:center;" class="mt-3 mb-2">
         </div>
 
         <div class="form-group">
-          <label for="devoured" style="font-family: 'Comfortaa', cursive;">Ready to Devour?</label><br>
+          <label for="devoured" style="font-family: 'Comfortaa', cursive; font-size:1.25em;">Add burger to order?</label><br>
           {{!-- <input type="radio" name="devoured" value="1"> Ready to Serve!<br> --}}
-          <input type="radio" name="devoured" value="0"> Prepare!
+          <input type="radio" name="devoured" value="0"> <font  style="font-family: 'Comfortaa', cursive; font-size:1em;">CONFIRM</font>
         </div>
 
-        <button type="submit" class="my-2 p-2 px-3 text-white"  style="background-color:blue; border: 0; border-radius: 5px; font-family: 'Comfortaa', cursive;">Add a Burger</button>
+        <button type="submit" class="p-2 px-3 text-white" style="background-color:blue; border: 0; border-radius: 5px; font-family: 'Comfortaa', cursive;">Add Burger</button>
       </form>
     </div>
   </div>
